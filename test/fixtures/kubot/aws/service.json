@@ -1,0 +1,24 @@
+{
+  "cpu": 256,
+  "family": "test",
+  "hostPort": 2001,
+  "image": "9817561289.dkr.ecr.us-east-1.amazonaws.com/test",
+  "memory": "400",
+  "name": "test",
+  "environmentVariables": [
+    { "name": "ONE", "value": "TWO" }
+  ],
+  "cluster": "staging",
+  "service": "test-staging",
+  "deploymentConfiguration": {
+    "maximumPercent": 200,
+    "minimumHealthyPercent": 0
+  },
+  "portMappings": [
+    {
+      "hostPort": 2000,
+      "containerPort": 2000,
+      "protocol": "tcp"
+    }
+  ]
+}

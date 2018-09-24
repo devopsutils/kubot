@@ -1,0 +1,51 @@
+{
+   "service": {
+     "clusterArn": "arn:aws:ecs:us-east-1:454882712799:cluster/staging",
+     "createdAt": 1485366473.822,
+     "deploymentConfiguration": {
+       "maximumPercent": 200,
+       "minimumHealthyPercent": 0
+     },
+     "deployments": [
+       {
+         "createdAt": 1537364288.018,
+         "desiredCount": 1,
+         "id": "ecs-svc/9223370499490487789",
+         "launchType": "EC2",
+         "pendingCount": 0,
+         "runningCount": 0,
+         "status": "PRIMARY",
+         "taskDefinition": "arn:aws:ecs:us-east-1:454882712799:task-definition/admin:210",
+         "updatedAt": 1537364288.018
+       },
+       {
+         "createdAt": 1536261091.555,
+         "desiredCount": 1,
+         "id": "ecs-svc/9223370500593684250",
+         "launchType": "EC2",
+         "pendingCount": 0,
+         "runningCount": 1,
+         "status": "ACTIVE",
+         "taskDefinition": "arn:aws:ecs:us-east-1:454882712799:task-definition/admin:204",
+         "updatedAt": 1536261091.555
+       }
+     ],
+     "desiredCount": 1,
+     "events": [],
+     "launchType": "EC2",
+     "loadBalancers": [],
+     "pendingCount": 0,
+     "placementConstraints": [],
+     "placementStrategy": [
+       {"field": "attribute:ecs.availability-zone", "type": "spread"},
+       {"field": "instanceId", "type": "spread"}
+     ],
+     "runningCount": 1,
+     "schedulingStrategy": "REPLICA",
+     "serviceArn": "arn:aws:ecs:us-east-1:454882712799:service/admin-staging",
+     "serviceName": "admin-staging",
+     "serviceRegistries": [],
+     "status": "ACTIVE",
+     "taskDefinition": "arn:aws:ecs:us-east-1:454882712799:task-definition/admin:210"
+   }
+ }
